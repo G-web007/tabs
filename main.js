@@ -7,22 +7,29 @@ for (let i = 0; i < elements.length; i++) {
 }
 
 function openCity(evt, targetId) {
-    let tabcontent = document.getElementsByClassName('tabcontent');
-    for (let i = 0; i < tabcontent.length; i++) {
+    let i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    let tablinks = document.getElementsByClassName('tablinks');
-    for (let i = 0; i < tablinks.length; i++) {
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", ""); 
     }
 
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-        targetElement.style.display = "block";
+        targetElement.style.display = "flex";
+        targetElement.classList.add("flex-row", "gap-6");
+
+        if (targetId === "Progress") {
+            targetElement.style.display = "block"; 
+        }
+
         evt.currentTarget.className += " active";
     } else {
         console.error("No element found with ID:", targetId);
     }
 }
-
