@@ -5,3 +5,11 @@
 .btn-nav {
     @apply p-8 text-gray-500 hover:text-black;
 }
+
+.btn-nav.active {
+    @apply text-blue-700 font-semibold;
+}
+
+.tabcontent {
+    @apply hidden;
+}

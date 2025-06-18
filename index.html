@@ -8,17 +8,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class="flex justify-center pt-8 h-screen">
-  <div class="flex justify-center w-5/6 h-full rounded bg-blue-50 border border-gray-300 shadow-lg">
-   <div class="bg-white shadow w-full h-24 flex justify-center rounded-t-lg">
-      <button class="btn-nav"><i class="fa-regular fa-user pr-4"></i> Overview</button>
-      <button class="btn-nav"><i class="fa-regular fa-heart pr-4"></i> Project</button>
-      <button class="btn-nav"><i class="fa-regular fa-file pr-4"></i> Documents</button>
-      <button class="btn-nav"><i class="fa-regular fa-flag pr-4"></i> Progress</button>
-      <button class="btn-nav"><i class="fa-regular fa-images pr-4"></i> Assets</button>
-      <button class="btn-nav"><i class="fa-solid fa-chart-simple pr-4"></i> Apps</button>
+  <div class="flex w-5/6 h-full rounded bg-blue-50 border border-gray-300 shadow-lg flex-col">
+    <div class="bg-white shadow w-full h-24 flex justify-center rounded-t-lg">
+      <button class="btn-nav tablinks" data-target="Overview"><i class="fa-regular fa-user pr-4"></i> Overview</button>
+      <button class="btn-nav tablinks" data-target="Project"><i class="fa-regular fa-heart pr-4"></i> Project</button>
+      <button class="btn-nav tablinks" data-target="Documents"><i class="fa-regular fa-file pr-4"></i> Documents</button>
+      <button class="btn-nav tablinks" data-target="Progress"><i class="fa-regular fa-flag pr-4"></i> Progress</button>
+      <button class="btn-nav tablinks" data-target="Assets"><i class="fa-regular fa-images pr-4"></i> Assets</button>
+      <button class="btn-nav tablinks" data-target="Apps"><i class="fa-solid fa-chart-simple pr-4"></i> Apps</button>
+    </div>
+
+    <div id="Overview" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Project" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Documents" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Progress" class="tabcontent">
+      <h3>Progress</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Assets" class="tabcontent">
+      <h3>Assets</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Apps" class="tabcontent">
+      <h3>Apps</h3>
+      <p>Tokyo is the capital of Japan.</p>
     </div>
   </div>
-  
+
   <!-- JavaScript -->
   <script src="main.js"></script>
 </body>
