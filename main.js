@@ -24,9 +24,9 @@ function openCity(evt, targetId) {
         targetElement.style.display = "flex";
         targetElement.classList.add("flex-row", "gap-6");
 
-        if (targetId === "Progress") {
-            targetElement.style.display = "block"; 
-        }
+        // if (targetId === "Progress") {
+        //     targetElement.style.display = "block"; 
+        // }
 
         evt.currentTarget.className += " active";
     } else {
